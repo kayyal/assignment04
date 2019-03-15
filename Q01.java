@@ -6,11 +6,17 @@ public class Q01 {
 
 
 
-    char encrypt (char inputChar){
-        return 'c';
+    char encrypt (char inputChar , int addedNumber){
+        inputChar =(char)((int)(inputChar + addedNumber));
+        return inputChar;
     }
-    String encryptAll (String message){
-        return "sdjb";
+    String encryptAll (String message , int addedNumber){
+        char [] stringToChar = message.toCharArray();
+        for (char selectedchar:stringToChar) {
+            stringToChar[selectedchar] = encrypt(selectedchar, addedNumber);
+        }
+        message = stringToChar.toString();
+        return message;
     }
 
     public String getMessage() {
