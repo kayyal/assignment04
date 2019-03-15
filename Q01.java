@@ -9,7 +9,14 @@ public class Q01 {
     char encrypt (char inputChar){
         return 'c';
     }
-    char encryptAll (String message){
-        return 'a';
+    String encryptAll (String message){
+        return "sdjb";
+    }
+
+    public String getMessage() {
+        return message;
+    }
+    public void getCode (int code){
+        this.number = code;
     }
 }
