@@ -1,8 +1,8 @@
 package assignment04;
 
 public class BloodData {
-    String bloodType;
-    String rhFactor;
+    private String bloodType;
+    private String rhFactor;
 
     public BloodData() {
         this.bloodType = "O";
