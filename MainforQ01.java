@@ -9,7 +9,5 @@ public class MainforQ01 {
         Q01 obj = new Q01(mess);
         int number = scanner.nextInt();
         System.out.println( obj.encryptAll(mess , number));
-
-
     }
 }
