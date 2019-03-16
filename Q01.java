@@ -16,12 +16,18 @@ public class Q01 {
     }
 
     String encryptAll(String message, int addedNumber) {
+        String encryptrdMessage ;
         char[] stringToChar = message.toCharArray();
-        for (char selectedchar : stringToChar) {
-            stringToChar[selectedchar] = encrypt(selectedchar, addedNumber);
+        for (int i = 0; i < stringToChar.length; i++) {
+            if (stringToChar[i]==' '){
+                continue;
+            }
+            stringToChar[i] = encrypt(stringToChar[i] , addedNumber);
+//            String s += String.valueOf(stringToChar[i]);
+//            System.out.println();
         }
-        message = stringToChar.toString();
-        return message;
+        encryptrdMessage = String.copyValueOf(stringToChar);
+        return encryptrdMessage;
     }
 
     public String getMessage() {
