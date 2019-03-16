@@ -8,5 +8,8 @@ public class BloodData {
         this.rhFactor = "Positive";
     }
 
-  
+    public BloodData(String bloodType, String rhFactor) {
+        this.bloodType = bloodType;
+        this.rhFactor = rhFactor;
+    }
 }
